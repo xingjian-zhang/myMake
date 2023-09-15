@@ -1,0 +1,7 @@
+target: "data/synthetic_linear.csv"
+type: "linear"
+args:
+  num_points: 100
+  slope: 1.0
+  intercept: 0.0
+  noise_std: 1.0

@@ -1,0 +1,8 @@
+desc: "Fit linear model on quadratic data."
+
+data:
+  path: "data/synthetic_quadratic.csv"
+
+model:
+  linear:
+    use_intercept: true

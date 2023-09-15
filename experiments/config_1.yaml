@@ -1,0 +1,8 @@
+desc: "Fit linear model on linear data."
+
+data:
+  path: "data/synthetic_linear.csv"
+
+model:
+  linear:
+    use_intercept: true

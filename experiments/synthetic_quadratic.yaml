@@ -1,0 +1,8 @@
+target: "data/synthetic_quadratic.csv"
+type: "quadratic"
+args:
+  num_points: 100
+  a: 1.0
+  b: 2.0
+  c: 3.0
+  noise_std: 1.0
