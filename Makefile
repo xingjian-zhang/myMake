@@ -5,7 +5,16 @@ GIT_SNAPSHOT = git --git-dir=.snapshot --work-tree=.
 .PHONY: help install snapshot commit synth clean
 
 help:
-	@echo "Good luck!"
+	@echo "Available targets:"
+	@echo "  install    - Install required Python packages from requirements.txt"
+	@echo "  snapshot   - Make a git snapshot of the current state"
+	@echo "  commit     - Commit to the main git repository"
+	@echo "  clean      - Remove the data and results directories"
+	@echo "  synth-%%    - Run synth.py for a specific experiment config"
+	@echo "  run-%%      - Run main.py for a specific experiment config"
+	@echo "  all-synth  - Run synth.py for all synthetic experiment configs"
+	@echo "  all-run    - Run main.py for all experiment configs"
+
 
 install:
 	pip install -r requirements.txt
