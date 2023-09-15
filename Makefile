@@ -2,7 +2,7 @@ PYTHON=/Users/jimmy/miniforge3/bin/python
 
 GIT_SNAPSHOT = git --git-dir=.snapshot --work-tree=.
 
-.PHONY: help install snapshot commit synth clean
+.PHONY: help install snapshot commit synth clean init
 
 help:
 	@echo "Available targets:"
@@ -19,6 +19,8 @@ help:
 install:
 	pip install -r requirements.txt
 
+init: .git
+
 .git: .snapshot
 	git init .
 
@@ -26,7 +28,7 @@ install:
 	git init .
 	mv .git .snapshot
 
-snapshot:
+snapshot: .snapshot
 	@SNAPSHOT_COUNT=$$(${GIT_SNAPSHOT} rev-list --all --count) ; \
 	${GIT_SNAPSHOT} add . ; \
 	${GIT_SNAPSHOT} commit -m "snapshot@$$((SNAPSHOT_COUNT+1))" || true

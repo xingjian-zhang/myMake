@@ -3,6 +3,14 @@
 
 ## Help
 
+Run
+```bash
+make init
+make install
+```
+to initialize the project and install the required Python packages.
+
+
 ```bash
 Available targets:
   install    - Install required Python packages from requirements.txt
