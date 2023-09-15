@@ -1,4 +1,5 @@
 # Makefile for Reproducible Research
+[Design Doc](https://docs.google.com/document/d/1UPJz7uZCYYQ9XBdUQnTe512LCzVPqD-zfsXojo0yFy4/edit#heading=h.njsc1qo13nkm)
 
 ## Help
 
